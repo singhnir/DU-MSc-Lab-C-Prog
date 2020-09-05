@@ -1,14 +1,16 @@
-// sinx.c - This program calculates sin(x)
+/*sinx.c - This program calculates sin(x)
+*a circle have 360 deg or 2*pi rad. (which is 2 × 3.1415=6.2831) rad in a circle.
+*1 rad= 57.2957795 deg & 1 deg = 0.01745329 rad.*/
 #include <stdio.h>
 #include <math.h>
-
-main()
+int main()
 {
-	float x,y;
-	//x is factor of pi y is value of sin(x)
-	printf("Enter the value of factor of pi\n");
-	scanf("%f",&x);
-	y = sin(x);
-	printf("%f, %f\n", x,y);
-	return 0;
+ 	float deg,rad, val;
+ 	printf("Enter an angle in degrees: ");
+ 	scanf("%f",&deg);
+ 	rad = 0.0174532925*deg;
+ 	val = sin(rad);
+ 	printf("%.2f degrees is %.2f radians\n",deg,rad);
+ 	printf("so the value of sin(%.0f): %.2f\n",deg,val);
+ return(0);
 }
