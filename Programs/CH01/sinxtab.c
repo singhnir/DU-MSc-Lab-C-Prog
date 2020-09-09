@@ -14,13 +14,13 @@ int main()
 	x2=x2*pi;
 	dx=(x2-x1)/(float)(n); //to get the intervals
 
-	printf("x is parameter equally spaced between x1 and x2\n");
-
-	for (int i = 0; i <=n; i++)
+	printf("\nx is parameter equally spaced between x1 and x2\n");
+	printf("\nx\t sin(x)\n");
+	for (int i = 0; i <=n; ++i)
 	{
 		x=x1+i*dx;
 		y=sin(x);
-		printf("for x:%.2f value of sin(x)= %.2f\n", x,y );
+		printf("%6.2f %6.2f\n", x,y );
 	}
 	return 0;
 }
