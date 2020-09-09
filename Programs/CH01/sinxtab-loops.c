@@ -16,18 +16,18 @@ int main()
 
 	printf("x is parameter equally spaced between x1 and x2\n");
 
-	printf("USING FOR LOOP\n");
-	printf("  x      sin(x)\n");
+	printf("\nUSING FOR LOOP\n");
+	printf("x\tsin(x)\n");
 
-	for (int i = 0; i <=n; i++)
+	for (int i = 0; i <=n; ++i)
 	{
 		x=x1+i*dx;
 		y=sin(x);
 		printf("%6.2f %6.2f\n", x,y );
 	}
 
-	printf("USING DO-WHILE LOOP\n");
-	printf("  x      sin(x)\n");
+	printf("\nUSING DO-WHILE LOOP\n");
+	printf("x\tsin(x)\n");
 
 	i=0;
 	do
@@ -38,8 +38,8 @@ int main()
 		i++;
 	} while (i<=n);
 
-	printf("USING WHILE LOOP\n");
-	printf("  x      sin(x)\n");
+	printf("\nUSING WHILE LOOP\n");
+	printf("x\tsin(x)\n");
 	i=0;n=20;
 	while (i<=n)
 	{
