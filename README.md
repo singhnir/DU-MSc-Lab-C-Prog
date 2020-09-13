@@ -33,13 +33,13 @@ We have been given a manual to practice the problems and here I'll commit the pr
 <summary><a href="Excercise/CH01/">Chapter 01 Excercise Problems.</a></summary>
 <ul>
 <li><a href="Excercise/CH01/trigtable.c">1. Table of the trigonometric functions sin(x), cos(x) and tan(x).</a></li>
-<li><a href="Excercise/CH01/absfun.c">2. Calculate the function of two variable x and y.</a></li>
+<li><a href="Excercise/CH01/absfun.c">2. Make a table of the function f(x,y).</a></li>
 <li><a href="Excercise/CH01/pythagorean.c">3. Program to find Pythagorean numbers less than 100.</a></li>
 <li><a href="Excercise/CH01/harshad.c">4. Program to find Harshad numbers between 50 and 70 both inclusive.</a></li>
-<li><a href="Excercise/CH01/fibonacci.c">5.1. Program to generate Fibonacci numbers till 200.</a></li>
-<li><a href="Excercise/CH01/fibonacci.c">5.2. Program to generate Fibonacci numbers till any integer.</a></li>
+<li><a href="Excercise/CH01/fibonacci1.c">5.1. Program to generate Fibonacci numbers till 200.</a></li>
+<li><a href="Excercise/CH01/fibonacci2.c">5.2. Program to generate Fibonacci numbers till any integer.</a></li>
 <li><a href="Excercise/CH01/factorial.c">6. Program to calculate the factorial of a given integer.</a></li>
-<li><a href="Excercise/CH01/PermuCombi.c">7. Program which calculates <sup>n</sup>C<sub>r</sub> and <sup>n</sup>R<sub>r</sub> for given values of n and r.</a></li>
+<li><a href="Excercise/CH01/PermuCombi.c">7. Program which calculates <sup>n</sup>C<sub>r</sub> and <sup>n</sup>P<sub>r</sub> for given values of n and r.</a></li>
 <li><a href="Excercise/CH01/determinant.c">8. Program to determine the roots of a quadratic equation.</a></li>
 </ul>
 </details>
