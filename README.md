@@ -34,7 +34,7 @@ We have been given a manual to practice the problems and here I'll commit the pr
 <li><a href="Programs/CH02/sinx.p">1.1. Plot of trigonometric function sin(x).</a></li>
 <li><a href="Programs/CH02/function.p">1.2. Plot of Example 1.4 function</a></li>
 <li><a href="Programs/CH02/sq-cube.p">2.1. Plot from datasheet "sq-cube.txt".</a></li>
-<li><a href="Programs/CH02/gmcounter.p">2.2. Plot of GM counter counting Statics "20s".</a></li>
+<li><a href="Programs/CH02/gmcounter.p">2.2. Plot of GM counter counting Statics "gmcounter.txt".</a></li>
 <li><a href="Programs/CH02/epsfile.p">3.1. Saving the plot in eps filetype.</a></li>
 <li><a href="Programs/CH02/pngfile.p">3.4. Saving the plot in png filetype.</a></li>
 <li><a href="Programs/CH02/periodic.p">4. Generating the datasheet and plotting the function.</a></li>
