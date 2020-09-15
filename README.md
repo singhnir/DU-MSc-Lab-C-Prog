@@ -10,7 +10,7 @@ We have been given a manual to practice the problems and here I'll commit the pr
 ### Programs
 
 <details>
-<summary><a href="Programs/CH01/">Chapter 01 Practice Problems.</a></summary>
+<summary>Chapter 01 Practice Problems.<a href="Programs/CH01/"></a></summary>
 <ul>
 <li><a href="Programs/CH01/First.c">1. My First C Programme.</a></li>
 <li><a href="Programs/CH01/sinx.c">2. Evaluating trigonometric function sin(x).</a></li>
@@ -25,6 +25,19 @@ We have been given a manual to practice the problems and here I'll commit the pr
 <li><a href="Programs/CH01/hcfrecur.c">8.2. To find the HCF or GCD of two numbers using the recursion.</a></li>
 <li><a href="Programs/CH01/prime.c">9.1. Program to generate prime numbers upto n.</a></li>
 <li><a href="Programs/CH01/primerange.c">9.2. Program to generate prime numbers in given range.</a></li>
+</ul>
+</details>
+
+<details>
+<summary>Chapter 02 Practice Problems.<a href="Programs/CH02/"></a></summary>
+<ul>
+<li><a href="Programs/CH02/sinx.p">1.1. Plot of trigonometric function sin(x).</a></li>
+<li><a href="Programs/CH02/function.p">1.2. Plot of Example 1.4 function</a></li>
+<li><a href="Programs/CH02/sq-cube.p">2.1. Plot from datasheet "sq-cube.txt".</a></li>
+<li><a href="Programs/CH02/gmcounter.p">2.2. Plot of GM counter counting Statics "20s".</a></li>
+<li><a href="Programs/CH02/epsfile.p">3.1. Saving the plot in eps filetype.</a></li>
+<li><a href="Programs/CH02/pngfile.p">3.4. Saving the plot in png filetype.</a></li>
+<li><a href="Programs/CH02/periodic.p">4. Generating the datasheet and plotting the function.</a></li>
 </ul>
 </details>
 
