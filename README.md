@@ -10,7 +10,7 @@ We have been given a manual to practice the problems and here I'll commit the pr
 ### Programs
 
 <details>
-<summary>Chapter 01 Practice Problems.<a href="Programs/CH01/"></a></summary>
+<summary>Chapter 01 Practice Problems.</summary>
 <ul>
 <li><a href="Programs/CH01/First.c">1. My First C Programme.</a></li>
 <li><a href="Programs/CH01/sinx.c">2. Evaluating trigonometric function sin(x).</a></li>
@@ -29,7 +29,7 @@ We have been given a manual to practice the problems and here I'll commit the pr
 </details>
 
 <details>
-<summary>Chapter 02 Practice Problems.<a href="Programs/CH02/"></a></summary>
+<summary>Chapter 02 Practice Problems.</summary>
 <ul>
 <li><a href="Programs/CH02/sinx.p">1.1. Plot of trigonometric function sin(x).</a></li>
 <li><a href="Programs/CH02/function.p">1.2. Plot of Example 1.4 function</a></li>
@@ -42,8 +42,8 @@ We have been given a manual to practice the problems and here I'll commit the pr
 </details>
 
 ### Excercise
-<details open>
-<summary><a href="Excercise/CH01/">Chapter 01 Excercise Problems.</a></summary>
+<details>
+<summary>Chapter 01 Excercise Problems.</summary>
 <ul>
 <li><a href="Excercise/CH01/trigtable.c">1. Table of the trigonometric functions sin(x), cos(x) and tan(x).</a></li>
 <li><a href="Excercise/CH01/absfun.c">2. Make a table of the function f(x,y).</a></li>
@@ -54,5 +54,16 @@ We have been given a manual to practice the problems and here I'll commit the pr
 <li><a href="Excercise/CH01/factorial.c">6. Program to calculate the factorial of a given integer.</a></li>
 <li><a href="Excercise/CH01/PermuCombi.c">7. Program which calculates <sup>n</sup>C<sub>r</sub> and <sup>n</sup>P<sub>r</sub> for given values of n and r.</a></li>
 <li><a href="Excercise/CH01/determinant.c">8. Program to determine the roots of a quadratic equation.</a></li>
+</ul>
+</details>
+
+<details open>
+<summary>Chapter 02 Excercise Problems.</summary>
+<ul>
+<li><a href="Excercise/CH02/problem_1/"></a>Problem 01</li>
+<li><a href="Excercise/CH02/problem_2/"></a>Problem 02</li>
+<li><a href="Excercise/CH02/problem_3/"></a>Problem 03</li>
+<li><a href="Excercise/CH02/problem_4/"></a>Problem 04</li>
+<li><a href="Excercise/CH02/problem_5/"></a>Problem 05</li>
 </ul>
 </details>
