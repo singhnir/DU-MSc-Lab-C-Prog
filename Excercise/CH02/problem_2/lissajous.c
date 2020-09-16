@@ -43,7 +43,7 @@ int main()
         // for problem 1(b)
         fprintf(P_2b,"%f\t%f\t%f\t%f\n",x(theta),y(theta,0.5,2,M_PI/4),y(theta,1,2,M_PI/4),y(theta,2,2,M_PI/4));
         // for problem 1(c)
-        fprintf(P_2c,"%f\t%f\t%f\t%f\n",x(theta),y(theta,1,2,M_PI/4),y(theta,1,2,M_PI/2),y(theta,1,2,M_PI/4));
+        fprintf(P_2c,"%f\t%f\t%f\t%f\n",x(theta),y(theta,1,2,M_PI/4),y(theta,1,2,M_PI/2),y(theta,1,2,M_PI));
     }
 
     // fclose(fp);     //close the file handle
