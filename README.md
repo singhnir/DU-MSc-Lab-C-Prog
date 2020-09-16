@@ -60,10 +60,10 @@ We have been given a manual to practice the problems and here I'll commit the pr
 <details open>
 <summary>Chapter 02 Excercise Problems.</summary>
 <ul>
-<li><a href="Excercise/CH02/problem_1/"></a>Problem 01</li>
-<li><a href="Excercise/CH02/problem_2/"></a>Problem 02</li>
-<li><a href="Excercise/CH02/problem_3/"></a>Problem 03</li>
-<li><a href="Excercise/CH02/problem_4/"></a>Problem 04</li>
-<li><a href="Excercise/CH02/problem_5/"></a>Problem 05</li>
+<li><a href="Excercise/CH02/problem_1/">Problem 01</a></li>
+<li><a href="Excercise/CH02/problem_2/">Problem 02</a></li>
+<li><a href="Excercise/CH02/problem_3/">Problem 03</a></li>
+<li><a href="Excercise/CH02/problem_4/">Problem 04</a></li>
+<li><a href="Excercise/CH02/problem_5/">Problem 05</a></li>
 </ul>
 </details>
