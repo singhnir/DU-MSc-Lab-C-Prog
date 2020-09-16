@@ -5,23 +5,23 @@
 
 float theta30(float x)  //defining the function for l=3 m= 0
 {
- float out=3.0*sqrt(14.0)/4.0*(5.0/3.0*pow(cos(x),3)-cos(x));
- return out;
+ float l3m0=3.0*sqrt(14.0)/4.0*(5.0/3.0*pow(cos(x),3)-cos(x));
+ return l3m0;
 }
 float theta31(float x)  //defining the function for l=3 m= ±1
 {
- float out=(sqrt(42))/(8)*sin(x)*(5*pow(cos(x),2)-1);
- return out;
+ float l3m1=(sqrt(42))/(8)*sin(x)*(5*pow(cos(x),2)-1);
+ return l3m1;
 }
 float theta32(float x)  //defining the function for l=3 m= ±2
 {
- double out=sqrt(105)/4*pow(sin(x),2)*cos(x);
- return out;
+ float l3m2=sqrt(105)/4*pow(sin(x),2)*cos(x);
+ return l3m2;
 }
 float theta33(float x)  //defining the function for l=3 m= ±3
 {
- float out=(sqrt(70))/(8)*(pow(sin(x),3));
- return out;
+ float l3m3=(sqrt(70))/(8)*(pow(sin(x),3));
+ return l3m3;
 }
 //main function will call above functions
 int main()
