@@ -37,4 +37,6 @@ int main()
   {
     fprintf(fp,"%f\t%f\n",x,f(x));
   }
+  //close the file handle
+  fclose(fp);
 }
