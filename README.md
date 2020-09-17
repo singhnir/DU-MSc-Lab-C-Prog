@@ -38,7 +38,7 @@ We have been given a manual to practice the problems and here I'll commit the pr
 <li><a href="Programs/CH02/epsfile.p">3.1. Saving the plot in eps filetype.</a></li>
 <li><a href="Programs/CH02/pngfile.p">3.4. Saving the plot in png filetype.</a></li>
 <li><a href="Programs/CH02/periodic.c">4.1. Generating the datasheet for given step function.</a></li>
-<li><a href="Programs/CH02/periodic.c">4.2. Plotting the datasheet "periodic.txt" of step function.</a></li>
+<li><a href="Programs/CH02/periodic.p">4.2. Plotting the datasheet "periodic.txt" of step function.</a></li>
 </ul>
 </details>
 
