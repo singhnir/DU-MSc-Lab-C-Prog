@@ -38,7 +38,16 @@ We have been given a manual to practice the problems and here I'll commit the pr
 <li><a href="Programs/CH02/epsfile.p">3.1. Saving the plot in eps filetype.</a></li>
 <li><a href="Programs/CH02/pngfile.p">3.4. Saving the plot in png filetype.</a></li>
 <li><a href="Programs/CH02/periodic.c">4.1. Generating the datasheet for given step function.</a></li>
-<li><a href="Programs/CH02/periodic.p">4.2. Plotting the datasheet "periodic.txt" of step function.</a></li>
+<li><a href="Programs/CH02/periodic.p">4.2. Plotting the datasheet "periodic.txt" of square wave.</a></li>
+</ul>
+</details>
+
+<details>
+<summary>Chapter 03 Practice Problems.</summary>
+<ul>
+<li><a href="Excercise/CH03/problem_1/">Example 01 : Exponential series</a></li>
+<li><a href="Excercise/CH03/problem_2/">Problem 02 : Sine series</a></li>
+<li><a href="Excercise/CH03/problem_3/">Problem 03 : Cosine series</a></li>
 </ul>
 </details>
 
@@ -58,13 +67,25 @@ We have been given a manual to practice the problems and here I'll commit the pr
 </ul>
 </details>
 
-<details open>
+<details>
 <summary>Chapter 02 Excercise Problems.</summary>
 <ul>
-<li><a href="Excercise/CH02/problem_1/">Problem 01</a></li>
-<li><a href="Excercise/CH02/problem_2/">Problem 02</a></li>
-<li><a href="Excercise/CH02/problem_3/">Problem 03</a></li>
-<li><a href="Excercise/CH02/problem_4/">Problem 04</a></li>
-<li><a href="Excercise/CH02/problem_5/">Problem 05</a></li>
+<li><a href="Excercise/CH02/problem_1/">Problem 01 : Triangle, Circle and Box</a></li>
+<li><a href="Excercise/CH02/problem_2/">Problem 02 : LissajousFigures</a></li>
+<li><a href="Excercise/CH02/problem_3/">Problem 03 : Triangular wave function</a></li>
+<li><a href="Excercise/CH02/problem_4/">Problem 04 : Orbital wave functions</a></li>
+<li><a href="Excercise/CH02/problem_5/">Problem 05 : Bessel functions</a></li>
+</ul>
+</details>
+
+<details open>
+<summary>Chapter 03 Excercise Problems.</summary>
+<ul>
+<li><a href="Excercise/CH03/problem_1/">Problem 01</a></li>
+<li><a href="Excercise/CH03/problem_2/">Problem 02</a></li>
+<li><a href="Excercise/CH03/problem_3/">Problem 03</a></li>
+<li><a href="Excercise/CH03/problem_4/">Problem 04</a></li>
+<li><a href="Excercise/CH03/problem_5/">Problem 05</a></li>
+<li><a href="Excercise/CH03/problem_6/">Problem 06</a></li>
 </ul>
 </details>
