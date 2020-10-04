@@ -46,8 +46,8 @@ We have been given a manual to practice the problems and here I'll commit the pr
 <summary>Chapter 03 Practice Problems.</summary>
 <ul>
 <li><a href="Excercise/CH03/problem_1/">Example 01 : Exponential series</a></li>
-<li><a href="Excercise/CH03/problem_2/">Problem 02 : Sine series</a></li>
-<li><a href="Excercise/CH03/problem_3/">Problem 03 : Cosine series</a></li>
+<li><a href="Excercise/CH03/problem_2/">Example 02 : Sine series</a></li>
+<li><a href="Excercise/CH03/problem_3/">Example 03 : Cosine series</a></li>
 </ul>
 </details>
 
@@ -71,7 +71,7 @@ We have been given a manual to practice the problems and here I'll commit the pr
 <summary>Chapter 02 Excercise Problems.</summary>
 <ul>
 <li><a href="Excercise/CH02/problem_1/">Problem 01 : Triangle, Circle and Box</a></li>
-<li><a href="Excercise/CH02/problem_2/">Problem 02 : LissajousFigures</a></li>
+<li><a href="Excercise/CH02/problem_2/">Problem 02 : Lissajous Figures</a></li>
 <li><a href="Excercise/CH02/problem_3/">Problem 03 : Triangular wave function</a></li>
 <li><a href="Excercise/CH02/problem_4/">Problem 04 : Orbital wave functions</a></li>
 <li><a href="Excercise/CH02/problem_5/">Problem 05 : Bessel functions</a></li>
