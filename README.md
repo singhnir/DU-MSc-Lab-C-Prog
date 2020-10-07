@@ -45,9 +45,9 @@ We have been given a manual to practice the problems and here I'll commit the pr
 <details>
 <summary>Chapter 03 Practice Problems.</summary>
 <ul>
-<li><a href="Excercise/CH03/problem_1/">Example 01 : Exponential series</a></li>
-<li><a href="Excercise/CH03/problem_2/">Example 02 : Sine series</a></li>
-<li><a href="Excercise/CH03/problem_3/">Example 03 : Cosine series</a></li>
+<li><a href="Programs/CH03/problem_1/">Example 01 : Exponential series</a></li>
+<li><a href="Programs/CH03/problem_2/">Example 02 : Sine series</a></li>
+<li><a href="Programs/CH03/problem_3/">Example 03 : Cosine series</a></li>
 </ul>
 </details>
 

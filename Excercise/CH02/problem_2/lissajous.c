@@ -17,15 +17,12 @@ float y(float theta, float A,float n, float delta)
 int main()
 {
     float theta;
-    //FILE*fp: declaring a pointer of type file
-    //NULL: to make sure the file was successfully opened
-    // FILE*fp=NULL;  // for simple one case
+
     FILE*P_2a=NULL;
     FILE*P_2b=NULL;
     FILE*P_2c=NULL;
     // float A,n,delta;
 
-    // fp=fopen("lissajous.txt","w");  // for simple one case
     P_2a=fopen("P_2a.txt","w");   // for problem 1(a)
     P_2b=fopen("P_2b.txt","w");   // for problem 1(b)
     P_2c=fopen("P_2c.txt","w");   // for problem 1(c)
@@ -45,9 +42,4 @@ int main()
         // for problem 1(c)
         fprintf(P_2c,"%f\t%f\t%f\t%f\n",x(theta),y(theta,1,2,M_PI/4),y(theta,1,2,M_PI/2),y(theta,1,2,M_PI));
     }
-
-    // fclose(fp);     //close the file handle
-    fclose(P_2a);
-    fclose(P_2b);
-    fclose(P_2c);
 }

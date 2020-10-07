@@ -28,8 +28,7 @@ int main()
 {
  float theta;
  float x1,x2,x3,x4,y1,y2,y3,y4;
- //FILE*fp: declaring a pointer of type file
- //NULL: to make sure the file was successfully opened
+
  FILE*fp1=NULL;
  FILE*fp2=NULL;
  FILE*fp3=NULL;
@@ -60,9 +59,4 @@ int main()
    fprintf(fp3,"%f\t%f\n",x3,y3);  // for l=3 m= ±2
    fprintf(fp4,"%f\t%f\n",x4,y4);  // for l=3 m= ±3
  }
-   //close the file handle
-   fclose(fp1);
-   fclose(fp2);
-   fclose(fp3);
-   fclose(fp4);
 }
