@@ -70,7 +70,8 @@ We have been given a manual to practice the problems and here I'll commit the pr
 <details>
 <summary>Chapter 02 Excercise Problems.</summary>
 <ul>
-<li><a href="Excercise/CH02/problem_1/">Problem 01 : Triangle, Circle and Box</a></li>
+<li><a href="Excercise/CH02/problem_1/c_prog_based/">Problem 01 : C program based</a></li>
+<li><a href="Excercise/CH02/problem_1/">Problem 01 : Gnuplot script based</a></li>
 <li><a href="Excercise/CH02/problem_2/">Problem 02 : Lissajous Figures</a></li>
 <li><a href="Excercise/CH02/problem_3/">Problem 03 : Triangular wave function</a></li>
 <li><a href="Excercise/CH02/problem_4/">Problem 04 : Orbital wave functions</a></li>
