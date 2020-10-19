@@ -60,6 +60,27 @@ We have been given a manual to practice the problems and here I'll commit the pr
 </ul>
 </details>
 
+<details>
+<summary>Chapter 05 Practice Problems.</summary>
+<ul>
+
+</ul>
+</details>
+
+<details>
+<summary>Chapter 06 Practice Problems.</summary>
+<ul>
+
+</ul>
+</details>
+
+<details>
+<summary>Chapter 07 Practice Problems.</summary>
+<ul>
+
+</ul>
+</details>
+
 ### Excercise
 <details>
 <summary>Chapter 01 Excercise Problems.</summary>
@@ -100,7 +121,7 @@ We have been given a manual to practice the problems and here I'll commit the pr
 </ul>
 </details>
 
-<details open>
+<details>
 <summary>Chapter 04 Excercise Problems.</summary>
 <ul>
 <li><a href="Excercise/CH04/problem_1/">Problem 01</a></li>
@@ -111,7 +132,40 @@ We have been given a manual to practice the problems and here I'll commit the pr
 </ul>
 </details>
 
-# How to use GNUPLOT scripts?
+<details>
+<summary>Chapter 05 Excercise Problems.</summary>
+<ul>
+
+</ul>
+</details>
+
+<details>
+<summary>Chapter 06 Excercise Problems.</summary>
+<ul>
+
+</ul>
+</details>
+
+<details>
+<summary>Chapter 07 Excercise Problems.</summary>
+<ul>
+
+</ul>
+</details>
+
+### To Do List
+
+|Chapters|Examples|Excercise|
+|:-:|:-:|:-:|
+|01|:heavy_check_mark:|:heavy_check_mark:|
+|02|:heavy_check_mark:|:heavy_check_mark:|
+|03|:heavy_check_mark:|:heavy_check_mark:|
+|04|:heavy_check_mark:|in progress|
+|05|          |           |
+|06|          |           |
+|07|          |           |
+
+## How to use GNUPLOT scripts?
 It's better to write a gnuplot script with extension `filename.p`, rather than writing the commands on gnuplot terminal. This way we can save our gnuplot codes for future needs.<br/>
 
 If you've saved a gnuplot script named `lissajous.p` in the current working directory:<br/>
@@ -120,17 +174,17 @@ If you've saved a gnuplot script named `lissajous.p` in the current working dire
 
 *Note: If we use `load "lissajous.p"` in **gnuplot terminal**, it will work both in linux and windows.*
 
-# Do you want to download all the codes at once?
+## Do you want to download all the codes at once?
 ### For Linux user:
 All the linux distributers have git installed in their system so they simply paste the following code to get a local copy in your system.<br/>
 `git clone https://github.com/singhnir/DU-MSc-Lab-C-Prog.git`
 ### For Windows user:
 Normally no windows has git preinstalled so previous command doesn't work on it but again you can download a zip copy of the codes clicking [**here**](https://github.com/singhnir/DU-MSc-Lab-C-Prog/archive/master.zip).
 
-# Contact
+## Contact
 If you've any doubt or suggestions regarding the project, please feel free to reach out by filing an issue here on github or you can simply email me at [nirsingh124@gmail.com](mailto:nirsingh124@gmail.com). You can also drop a message to my [Telegram](https://t.me/singhnirmal) account.
 
-# Acknowledgements
+## Acknowledgements
 
-# Licence
+## Licence
 [MIT License](https://github.com/singhnir/DU-MSc-Lab-C-Prog/blob/master/LICENSE)
