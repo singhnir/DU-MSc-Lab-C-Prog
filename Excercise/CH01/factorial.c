@@ -10,7 +10,6 @@ int main()
     printf("Enter a positive integer: ");
     scanf("%d",&n);
     printf("Factorial of %d is: %ld\n",n,factorial(n));
-    return 0;
 }
 //defining the function
 long int factorial(int n)

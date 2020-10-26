@@ -8,10 +8,10 @@ int main()
 {
 	int num,sum=0;
 	printf("Enter the integer till you want Fibonacci numbers: ");
-	scanf("%d", &num);
+	scanf("%d",&num);
 	while(fibonacci(sum)<=num)
 	{
-		printf("%d ",fibonacci(sum));
+		printf("%d\n",fibonacci(sum));
 		sum++;
 	}
 }
