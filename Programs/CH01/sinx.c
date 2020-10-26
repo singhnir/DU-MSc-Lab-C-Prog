@@ -10,7 +10,6 @@ int main()
  	scanf("%f",&deg);
  	rad = 0.0174532925*deg;
  	val = sin(rad);
- 	printf("%.2f degrees is %.2f radians\n",deg,rad);
- 	printf("so the value of sin(%.0f): %.2f\n",deg,val);
- return(0);
+ 	printf("\nGiven angle in radians: %.2f\n",rad);
+ 	printf("The value of sin(%.0f): %.2f\n",deg,val);
 }

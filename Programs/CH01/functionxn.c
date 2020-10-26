@@ -6,7 +6,7 @@ float func(float x, int n)
 {
 	float y,z=1.0;
 	int i;
-	for (int i=1;i<=n;++i)
+	for (i=1;i<=n;++i)
 	{
 		z*=x;
 	}
@@ -24,10 +24,9 @@ float func(float x, int n);
 //main function will call func
 int main ()
 {
-float a;
-int b;
-    printf("\nEnter the value of x(float) and n(int):\n");
-    scanf("%f %d", &a, &b);
-    printf("\nfor x= %.2f and n= %d function f(x,n) = %.2f\n",a,b,func(a,b));
-	return 0;
+	float a;
+	int b;
+    printf("Enter the value of x(float) and n(int):\n");
+    scanf("%f%d",&a,&b);
+    printf("\nfor x=%.2f and n=%d function f(x,n) = %.2f\n",a,b,func(a,b));
 }

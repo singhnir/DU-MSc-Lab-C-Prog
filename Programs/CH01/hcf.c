@@ -4,18 +4,16 @@
 #include <stdio.h>
 int main()
 {
-	int first_num,second_num,i,hcf;
+	int num1,num2,i,hcf;
 	printf("Enter the two integers to find their HCF:\n");
-	scanf("%d %d",&first_num,&second_num);
+	scanf("%d %d",&num1,&num2);
 
-	for (int i=1;i<=first_num && i<=second_num; ++i)
+	for (i=1;i<=num1 && i<=num2;++i)
 	{
-		if (first_num%i==0 && second_num%i==0)
+		if (num1%i==0 && num2%i==0)
 		{
 			hcf=i;
 		}
 	}
-	printf("\nHCF of %d and %d is %d.\n",first_num,second_num,hcf);
-
-	return 0;
+	printf("\nHCF of %d and %d is %d.\n",num1,num2,hcf);
 }

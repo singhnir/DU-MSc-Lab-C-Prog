@@ -16,10 +16,9 @@ int main()
 	}
 	if (num==rev)
 	{
-		printf("\n %d Voila, You got it lucky, check with diffrent number.\n",num);
+		printf("\nVoila, You got it lucky, check with diffrent number.\n");
 	}
 	else {
-		printf("\n %d Sorry if you were looking a palindrome number, try again.\n",num);
+		printf("\nSorry if you were looking a palindrome number, try again.\n");
 	}
-	return 0;
 }

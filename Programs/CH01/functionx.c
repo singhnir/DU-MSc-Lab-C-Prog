@@ -15,10 +15,9 @@ float func(float x)
 int main()
 {
 	float a,b;
-	printf("Enter the value for x:\n");
+	printf("Enter the value for x:");
 	scanf("%f",&a);
 	// function call
 	b = func(a);
-	printf("for x=%6.2f the value of function f(x)= %6.2f\n",a,b);
-  return 0;
+	printf("for x=%.2f the value of function f(x)= %.2f\n",a,b);
 }

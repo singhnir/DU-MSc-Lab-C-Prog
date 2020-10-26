@@ -4,26 +4,24 @@
 
 int main()
 {
-	float x,x1,x2,y,dx,pi;
+	float x,x1,x2,y,dx;
 	int i,n;
 	n=20;
-	pi = 4.0*atan(1.0);
-	printf("Enter the x1 and x2 in units of pi:\n");
-	scanf("%f, %f",&x1, &x2);
-	x1=x1*pi;
-	x2=x2*pi;
-	dx=(x2-x1)/(float)(n); //to get the intervals
-
-	printf("x is parameter equally spaced between x1 and x2\n");
+	printf("Enter the x1 and x2 in units of degrees:\n");
+	scanf("%f%f",&x1,&x2);
+	//1 rad= 57.2957795 deg & 1 deg = 0.01745329 rad.
+	x1=x1*0.01745329;
+	x2=x2*0.01745329;
+	dx=(x2-x1)/(float)(n); //to get the stepsize
 
 	printf("\nUSING FOR LOOP\n");
 	printf("x\tsin(x)\n");
 
-	for (int i = 0; i <=n; ++i)
+	for (i=0;i<=n;++i)
 	{
 		x=x1+i*dx;
 		y=sin(x);
-		printf("%6.2f %6.2f\n", x,y );
+		printf("%.2f\t%.2f\n",x,y);
 	}
 
 	printf("\nUSING DO-WHILE LOOP\n");
@@ -34,7 +32,7 @@ int main()
 	{
 		x=x1+i*dx;
 		y=sin(x);
-		printf("%6.2f %6.2f\n", x,y );
+		printf("%.2f\t%6.2f\n",x,y);
 		i++;
 	} while (i<=n);
 
@@ -45,8 +43,9 @@ int main()
 	{
 		x=x1+i*dx;
 		y=sin(x);
-		printf("%6.2f %6.2f\n", x,y );
+		printf("%.2f\t%.2f\n",x,y);
 		i++;
 	}
-	return 0;
+
+	printf("\nx(in degrees) is parameter equally spaced between x1 and x2\n");
 }
