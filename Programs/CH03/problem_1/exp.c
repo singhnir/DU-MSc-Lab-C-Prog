@@ -14,6 +14,8 @@ int main()
     scanf("%f",&x);
     printf("Enter the number of terms : ");
     scanf("%d",&n);
+    // printing for n=0
+    printf("x\tn\tsum\n");
     // loop for summing terms using ratio
     for(i=1;i<=n;i++)
     {
@@ -21,6 +23,7 @@ int main()
         t1=R*t0;
         sum=sum+t1;
         t0=t1;
+        printf("%.2f\t%d\t%.2f\n",x,i+1,sum);
     }
     printf("\nFor x=%.2f and n=%d, exponential sum= %.2f",x,n,sum);
 }

@@ -1,6 +1,8 @@
 # this script is require to have datasheet periodic.txt in same directory
 set grid
 set time
+# Draw a horizontal centreline.
+set xzeroaxis
 set yrange [-2:2]
 set title "Periodic Square Wave" font ",14"
 

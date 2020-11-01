@@ -1,6 +1,7 @@
-# this script is require to have datasheet n0.txt in same directory
+# this script is require to have datasheet jx0.txt in same directory
 set grid
 set time
+set xzeroaxis
 set xlabel "value of x" font ",14"
 set ylabel "Bessel Function" font ",14"
 set title "Bessel Function J(x)" font ",14"

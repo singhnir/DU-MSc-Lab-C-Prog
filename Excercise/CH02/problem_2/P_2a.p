@@ -4,6 +4,9 @@ set multiplot layout 2,2 title "Lissajous figure for case: 2a" font ",14"
 set tmargin 2
 set grid
 set time
+# Draw a horizontal centreline.
+set xzeroaxis
+set yzeroaxis
 
 set title "delta=pi/4 A=1 n=2"
 plot "P_2a.txt" u 1:2 w l lc rgb "red" title ""

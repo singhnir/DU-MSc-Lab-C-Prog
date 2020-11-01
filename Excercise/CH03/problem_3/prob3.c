@@ -33,8 +33,8 @@ int main()
             k++;
         } while(fabs(t1/sum)>accuracy);
         sum=sum*pow(x/2,n);
-        fprintf(fp,"%lf\t%lf\n",x,sum);
+        fprintf(fp,"%.4lf\t%.4lf\n",x,sum);
+        // .4lf ensures 4 significant figures
         //printf("%lf\t%lf\n",x,sum);
-    }
-     
+    }     
 }

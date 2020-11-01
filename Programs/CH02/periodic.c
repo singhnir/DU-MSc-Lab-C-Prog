@@ -28,8 +28,7 @@ float f(float x)
 int main()
 {
   float x;
-  //FILE*fp: declaring a pointer of type file
-    //NULL: to make sure the file was successfully opened
+
   FILE*fp=NULL;
   fp=fopen("periodic.txt","w");
   //Loop to calculate and store data-points
@@ -37,6 +36,4 @@ int main()
   {
     fprintf(fp,"%f\t%f\n",x,f(x));
   }
-  //close the file handle
-  fclose(fp);
 }

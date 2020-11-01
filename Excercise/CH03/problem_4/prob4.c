@@ -22,6 +22,7 @@ int main()
             i++;
         } while(fabs(t1/sum)>accuracy);
         sum=sum*cos(M_PI*z*z/2);
-        fprintf(fp,"%lf\t%lf\n",z,sum);
+        fprintf(fp,"%.4lf\t%.4lf\n",z,sum);
+        // .4lf ensures 4 significant figures
     }
 }
