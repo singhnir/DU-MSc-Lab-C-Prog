@@ -6,13 +6,13 @@ int main()
 {
     FILE*fp=NULL;
     fp=fopen("nfixed.txt","w");
-    int i,n,t0;
-    double x,t1,R,sum;
+    int i,n;
+    double x,t0,t1,R,sum;
 
     printf("Enter the number of terms: ");
     scanf("%d",&n);
     // loop for summing terms using ratio
-    for(x=0;x<=10;x=x+0.1)
+    for(x=0.0;x<=6.0;x=x+0.1)
     {
         i=1;
         t0=1;    //defining first term of series
@@ -25,6 +25,5 @@ int main()
             i++;
         } while(i<=n);
         fprintf(fp,"%lf\t%lf\n",x,sum);
-        //printf("%lf\t%lf\n",x,sum);
     }
 }

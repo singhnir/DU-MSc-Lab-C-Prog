@@ -2,9 +2,11 @@
 
 ## Semester: III Course Code: PH-CL502
 
+### Manual by : Professor Shobhit Mahajan [>Profile<](http://people.du.ac.in/~sm/)
+### Course Instructor : Professor Jyoti Rajput [>Profile<](http://du.ac.in/du/uploads/Faculty%20Profiles/Physics/Physics_Jyoti_Rajput.pdf)
 As per our university syllabus, "This course is intended to be an Introduction to a **Programming Language C** as well as application for Numerical Analysis. The course would impart training in the structure of the programming language as well as train the students in using programs to numerically solve problems in various areas. In addition, it will also familiarize the students to the Unix environment."
 
-We have been given a manual to practice the problems and here I'll commit the programs as I successfully compile and get the desired output.<br>
+We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZUY6VBRm5HezVoqkNAQ/view?usp=sharing)** to practice the problems and here I'll commit the programs as I successfully compile and get the desired output.<br>
 ***This repository is under progress.***
 ## Table of Contents
 ### Programs
@@ -180,6 +182,11 @@ All the linux distributers have git installed in their system so they simply pas
 `git clone https://github.com/singhnir/DU-MSc-Lab-C-Prog.git`
 ### For Windows user:
 Normally no windows has git preinstalled so previous command doesn't work on it but again you can download a zip copy of the codes clicking [**here**](https://github.com/singhnir/DU-MSc-Lab-C-Prog/archive/master.zip).
+
+## Requirements
+* Text Editor (Atom/Sublime...)
+* GCC Compiler
+* Gnuplot
 
 ## Contact
 If you've any doubt or suggestions regarding the project, please feel free to reach out by filing an issue here on github or you can simply email me at [nirsingh124@gmail.com](mailto:nirsingh124@gmail.com). You can also drop a message to my [Telegram](https://t.me/singhnirmal) account.
