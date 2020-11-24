@@ -62,10 +62,11 @@ We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZU
 </ul>
 </details>
 
-<details>
+<details open>
 <summary>Chapter 05 Practice Problems.</summary>
 <ul>
-
+<li><a href="Programs/CH05/problem_1/">Example 01 : Euler, RK2 and RK4 methods</a></li>
+<li><a href="Programs/CH05/problem_2/">Example 02 : 2nd order differential system</a></li>
 </ul>
 </details>
 
@@ -134,10 +135,15 @@ We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZU
 </ul>
 </details>
 
-<details>
+<details open>
 <summary>Chapter 05 Excercise Problems.</summary>
 <ul>
-
+<li><a href="Excercise/CH05/problem_1/">Problem 01</a></li>
+<li><a href="Excercise/CH05/problem_2/">Problem 02</a></li>
+<li><a href="Excercise/CH05/problem_3/">Problem 03</a></li>
+<li><a href="Excercise/CH05/problem_4/">Problem 04</a></li>
+<li><a href="Excercise/CH05/problem_5/">Problem 05</a></li>
+<li><a href="Excercise/CH05/problem_6/">Problem 06</a></li>
 </ul>
 </details>
 
@@ -162,8 +168,8 @@ We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZU
 |01|:heavy_check_mark:|:heavy_check_mark:|
 |02|:heavy_check_mark:|:heavy_check_mark:|
 |03|:heavy_check_mark:|:heavy_check_mark:|
-|04|:heavy_check_mark:|in progress|
-|05|          |           |
+|04|:heavy_check_mark:|:heavy_check_mark:|
+|05|:heavy_check_mark:|:heavy_check_mark:|
 |06|          |           |
 |07|          |           |
 
