@@ -115,35 +115,35 @@ We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZU
 <details>
 <summary>Chapter 03 Excercise Problems.</summary>
 <ul>
-<li><a href="Excercise/CH03/problem_1/">Problem 01</a></li>
-<li><a href="Excercise/CH03/problem_2/">Problem 02</a></li>
-<li><a href="Excercise/CH03/problem_3/">Problem 03</a></li>
-<li><a href="Excercise/CH03/problem_4/">Problem 04</a></li>
-<li><a href="Excercise/CH03/problem_5/">Problem 05</a></li>
-<li><a href="Excercise/CH03/problem_6/">Problem 06</a></li>
+<li><a href="Excercise/CH03/problem_1/">Problem 01 : Simple series</a></li>
+<li><a href="Excercise/CH03/problem_2/">Problem 02 : Cosine series</a></li>
+<li><a href="Excercise/CH03/problem_3/">Problem 03 : Bessel series</a></li>
+<li><a href="Excercise/CH03/problem_4/">Problem 04 : Series F(z)</a></li>
+<li><a href="Excercise/CH03/problem_5/">Problem 05 : Series f(z,n)</a></li>
+<li><a href="Excercise/CH03/problem_6/">Problem 06 : Series f(z)</a></li>
 </ul>
 </details>
 
 <details>
 <summary>Chapter 04 Excercise Problems.</summary>
 <ul>
-<li><a href="Excercise/CH04/problem_1/">Problem 01</a></li>
-<li><a href="Excercise/CH04/problem_2/">Problem 02</a></li>
-<li><a href="Excercise/CH04/problem_3/">Problem 03</a></li>
-<li><a href="Excercise/CH04/problem_4/">Problem 04</a></li>
-<li><a href="Excercise/CH04/problem_5/">Problem 05</a></li>
+<li><a href="Excercise/CH04/problem_1/">Problem 01 : Simple polynomial</a></li>
+<li><a href="Excercise/CH04/problem_2/">Problem 02 : Bessel function J0(x)</a></li>
+<li><a href="Excercise/CH04/problem_3/">Problem 03 : Tricky function f(x,y)</a></li>
+<li><a href="Excercise/CH04/problem_4/">Problem 04 : Kepler's orbit</a></li>
+<li><a href="Excercise/CH04/problem_5/">Problem 05 : Chebyshev polynomial U4(x)</a></li>
 </ul>
 </details>
 
 <details open>
 <summary>Chapter 05 Excercise Problems.</summary>
 <ul>
-<li><a href="Excercise/CH05/problem_1/">Problem 01</a></li>
-<li><a href="Excercise/CH05/problem_2/">Problem 02</a></li>
-<li><a href="Excercise/CH05/problem_3/">Problem 03</a></li>
-<li><a href="Excercise/CH05/problem_4/">Problem 04</a></li>
-<li><a href="Excercise/CH05/problem_5/">Problem 05</a></li>
-<li><a href="Excercise/CH05/problem_6/">Problem 06</a></li>
+<li><a href="Excercise/CH05/problem_1/">Problem 01 : Simple ODE</a></li>
+<li><a href="Excercise/CH05/problem_2/">Problem 02 : Motion of simple pendulam</a></li>
+<li><a href="Excercise/CH05/problem_3/">Problem 03 : Prey-Predator system</a></li>
+<li><a href="Excercise/CH05/problem_4/">Problem 04 : Tricky differential equation</a></li>
+<li><a href="Excercise/CH05/problem_5/">Problem 05 : Lorenz equations</a></li>
+<li><a href="Excercise/CH05/problem_6/">Problem 06 : Bifurcation diagram</a></li>
 </ul>
 </details>
 
