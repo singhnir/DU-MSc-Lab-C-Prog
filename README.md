@@ -62,7 +62,7 @@ We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZU
 </ul>
 </details>
 
-<details open>
+<details>
 <summary>Chapter 05 Practice Problems.</summary>
 <ul>
 <li><a href="Programs/CH05/problem_1/">Example 01 : Euler, RK2 and RK4 methods</a></li>
@@ -80,7 +80,9 @@ We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZU
 <details>
 <summary>Chapter 07 Practice Problems.</summary>
 <ul>
-
+<li><a href="Programs/CH07/fibonacci.c">Example 01 : Generating the first 10 Fibonacci numbers</a></li>
+<li><a href="Programs/CH07/matrix.c">Example 02 : To print and add 2x3 matrices</a></li>
+<li><a href="Programs/CH07/matalloc.c">Example 03 : Using matalloc function</a></li>
 </ul>
 </details>
 
@@ -135,7 +137,7 @@ We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZU
 </ul>
 </details>
 
-<details open>
+<details>
 <summary>Chapter 05 Excercise Problems.</summary>
 <ul>
 <li><a href="Excercise/CH05/problem_1/">Problem 01 : Simple ODE</a></li>
@@ -157,7 +159,8 @@ We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZU
 <details>
 <summary>Chapter 07 Excercise Problems.</summary>
 <ul>
-
+<li><a href="Excercise/CH07/prob1.c">Problem 01 : Creating functions for matrix operations</a></li>
+<li><a href="Excercise/CH07/prob2.c">Problem 02 : Finding the commutator</a></li>
 </ul>
 </details>
 
