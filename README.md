@@ -152,7 +152,12 @@ We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZU
 <details>
 <summary>Chapter 06 Excercise Problems.</summary>
 <ul>
-
+<li><a href="Excercise/CH06/prob1.c">Problem 01 : Using trapezoidal and simpson</a></li>
+<li><a href="Excercise/CH06/prob2.c/">Problem 02 : Time period of a pendulum</a></li>
+<li><a href="Excercise/CH06/prob3.c/">Problem 03 : Particle moving under central force</a></li>
+<li><a href="Excercise/CH06/prob4.c/">Problem 04 : Root of the function F(x)</a></li>
+<li><a href="Excercise/CH06/prob5.c/">Problem 05 : Bessel function J0</a></li>
+<li><a href="Excercise/CH06/prob6.c/">Problem 06 : Bessel function J2</a></li>
 </ul>
 </details>
 
@@ -173,8 +178,8 @@ We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZU
 |03|:heavy_check_mark:|:heavy_check_mark:|
 |04|:heavy_check_mark:|:heavy_check_mark:|
 |05|:heavy_check_mark:|:heavy_check_mark:|
-|06|          |           |
-|07|          |           |
+|06|          |:heavy_check_mark:|
+|07|:heavy_check_mark:|:heavy_check_mark:|
 
 ## How to use GNUPLOT scripts?
 It's better to write a gnuplot script with extension `filename.p`, rather than writing the commands on gnuplot terminal. This way we can save our gnuplot codes for future needs.<br/>
