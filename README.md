@@ -152,6 +152,7 @@ We have been given a **[MANUAL](https://drive.google.com/file/d/10ZzmHsvMVDVspZU
 <details>
 <summary>Chapter 06 Excercise Problems.</summary>
 <ul>
+<li><a href="Excercise/CH06/chapter-6-excercise-sol-all-in-one.pdf/">ALL IN ONE (PDF)</a></li>
 <li><a href="Excercise/CH06/prob1.c">Problem 01 : Using trapezoidal and simpson</a></li>
 <li><a href="Excercise/CH06/prob2.c/">Problem 02 : Time period of a pendulum</a></li>
 <li><a href="Excercise/CH06/prob3.c/">Problem 03 : Particle moving under central force</a></li>
