@@ -1,3 +1,23 @@
+# Intention of This fork
+
+My goal is to write a Readable, self contained solutions that let's one to learn the logic, not taylor piece of jumbling codes for getting output - that's what
+I felt when I looked into manual linked and I tried too hard to learn from it with vain. 
+
+I suggest the starting points as the directory Programs, Each chapter (atleast the One I have modified) have notes + templates that's used for solving excersise
+as of now,
+
+<details>
+<ul>
+<li><a href="Programs/CH05/problem_1/"> Explains solving ode with numerical techniques Euler, RK2 and RK4 methods</a></li>
+<li><a href="Programs/CH05/problem_2/"> Extending previous for higher dimensionality </a></li>
+</ul>
+</details>
+
+
+
+
+For curiosity - I'm following [Kernal source file style](https://man.openbsd.org/style.9)
+
 # Computational Physics (Lab) - M.Sc. Physics University of Delhi
 
 ## Semester: III Course Code: PH-CL502
