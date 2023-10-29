@@ -2,6 +2,12 @@
 #include <math.h>
 
 /*
+ *  A great place to start adventure with ode solvers
+ *  https://github.com/apf99/SDOF-Simulator/blob/master/sdof_simulator2.py
+ *  precious 30mins - https://www.youtube.com/watch?v=-WhS5iuvGr0 (aliter: https://yewtu.be/watch?v=-WhS5iuvGr0)
+ *
+ *  This piece of code and notes are implemention of above in C
+ *
  *  y_i+1         = y_i + step_size
  *  step_size     = del_t * (slope) 
  *  finding 'good' estimate of slope defines algorithm
@@ -11,7 +17,6 @@
  */
 
 /*
-
 --------------------------------------------------------------------------
 naive estimate of slope is simply the f'(x,y) 1st term in taylor expansion
 what's better?
