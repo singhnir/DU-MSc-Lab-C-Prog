@@ -6,7 +6,7 @@ FILE *p;
 char filename[50];
 
 
-// Global Variables
+// Global Variables - approx invertal be generous ;)
 float a = 1.5;
 float b = 10.0;
 
@@ -26,16 +26,14 @@ float b = 10.0;
  *       h -  small addition parameter for newton_ralph
  */
 
+/* define function for which root is being found */
 float 
 func(float dummy, float x)
 {
 	return (exp(a*x)-b*x*x);
 }
 
-/*
- * 1st derivate of func for newton ralph
- */
-
+/* 1st derivate of func for newton ralph */
 float 
 func_deri(float dummy, float x)
 {
