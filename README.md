@@ -1,6 +1,6 @@
 # Intention of This fork
 
-My goal is to write a Readable, self contained solutions that let's one to learn the logic, not taylor piece of jumbling codes for getting output - that's what
+My goal is to write  Readable, self contained solutions that let's one to learn the logic, not taylor piece of jumbling codes for getting output - that's what
 I felt when I looked into manual linked and I tried too hard to learn from it with vain. 
 
 I suggest the starting points as the directory Programs, Each chapter (atleast the One I have modified) have notes + templates that's used for solving excersise
