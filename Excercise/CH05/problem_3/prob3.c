@@ -1,44 +1,109 @@
-// "prey-predator" system
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 
-#define dx(t,x,y) (gamma1*(x)-gamma2*(x)*(y))
-#define dy(t,x,y) (-gamma3*(y)+gamma4*(x)*(y))
+// define parameters of system
+double r1 = 0.25;      
+double r2 = 0.01;
+double r3 = 1.0;
+double r4 = 0.01;
 
-int main()
+// global 
+// it's better to define initial conditions in main
+// because usually a single plot should show multiple initial conditions  
+
+// double y_ini = a;  // global variables cannot be dynamic  
+double x_ini = 100.0;  //  y' = x
+double t_ini = 0.0;
+double dt    = 0.01;
+
+
+// return multiple step_size values
+struct 
+step {
+	double x;
+	double y;
+};
+
+/*
+ * given the 2 1st order equation
+ *         y' = r3y + r4xy 
+ *         x' = r1x - r2xy
+ */
+
+// y'
+double 
+func1(double x, double y, double t) 
 {
-    FILE*fp=NULL;
-    fp=fopen("prob3.txt","w");
+	return ( -r3*y + r4*x*y ) ;
+}
 
-    double gamma1=0.25,gamma2=0.01,gamma3=1,gamma4=0.01;
-    double t,x,y,y0,h=0.05;
-    double k1,k2,k3,k4,m1,m2,m3,m4;
+// x'
+double 
+func2(double x, double y, double t) 
+{
+	return( r1*x - r2*x*y );
+}
 
-    for (y0=5;y0<=25;y0+=5)
-    {
-        // initial conditions
-        t=0;
-        x=100;
-        y=y0;
 
-        do{
-            fprintf(fp,"%lf\t%lf\t%lf\n",x,y,t);
-            k1=h*dx(t,x,y);
-            m1=h*dy(t,x,y);
+struct step 
+RK4_step(double x, double y, double t, double dt)
+{
+	struct step step_size;
 
-            k2=h*dx(t+h/2,x+k1/2,y+m1/2);
-            m2=h*dy(t+h/2,x+k2/2,y+m2/2);
+	double slope_x, m1, m2, m3, m4;
+	double slope_y, k1, k2, k3, k4;
 
-            k3=h*dx(t+h/2,x+k2/2,y+m2/2);
-            m3=h*dy(t+h/2,x+k2/2,y+m2/2);
+	k1    = func1(x, y, t);  // y'
+	m1    = func2(x, y, t); //  x'  
 
-            k4=h*dx(t+h,x+k3,y+m3);
-            m4=h*dy(t+h,x+k3,y+m3);
-         
-            x=x+(k1+2*k2+2*k3+k4)/6;
-            y=y+(m1+2*m2+2*m3+m4)/6;         
-            t=t+h;
-        } while(t<=20);
-    }
- 
+	k2    = func1(x + (m1*dt/2.0) , y + (k1*dt/2.0), t + dt/2.0 ); 
+	m2    = func2(x + (m1*dt/2.0) , y + (k1*dt/2.0), t + dt/2.0 ); 
+
+	k3    = func1(x + (m2*dt/2.0) , y + (k2*dt/2.0), t + dt/2.0 ); 
+	m3    = func2(x + (m2*dt/2.0) , y + (k2*dt/2.0), t + dt/2.0 ); 
+
+	k4    = func1(x + (m3*dt), y + (k3*dt) , t + dt);
+	m4    = func2(x + (m3*dt), y + (k3*dt) , t + dt); 
+
+
+        // in the form a_i * k_i  
+	slope_y = 1/(double)6.0 * ( 1*k1 + 2*k2 + 2*k3 + 1*k4 ) ;
+	slope_x = 1/(double)6.0 * ( 1*m1 + 2*m2 + 2*m3 + 1*m4 ) ;
+
+	step_size.y = slope_y * dt;	
+	step_size.x = slope_x * dt;	
+
+   	return ( step_size ); 
+}
+
+int 
+main ()
+{
+	double t; 
+	double x_RK4, y_RK4;   
+
+	struct step step_size;
+	int n=1;
+
+        // no of terms in the required interval depending on dt
+       //  and making sure it's a integer
+
+	printf ("%8s \t %8s \t %8s \n","time","x", "y"); 
+
+	for ( double y_ini = 5.0; y_ini <=25.0; y_ini+=5.0) {
+
+		y_RK4 = y_ini;
+		x_RK4 = x_ini;
+        
+		for ( t = t_ini ; t <= 20; t+=dt ) {
+
+		step_size = RK4_step (x_RK4, y_RK4, t, dt);
+		x_RK4     = x_RK4   + step_size.x ;
+		y_RK4     = y_RK4   + step_size.y ;
+
+		printf ("%f \t %f \t %f \n", t+dt, x_RK4, y_RK4 );
+
+		}
+		
+	}
 }
