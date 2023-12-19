@@ -9,14 +9,28 @@
  * 4. put all together to fit the question
  */
 
-/* What are constants?
+/*
+ * What are constants?
  * integration limits, integration step size
  */
+
+/*
+ *   mathematical function (2 variables)
+ *     -> integrator
+ *      -> root_finding for the integration results 
+ *         [if roots are found for different integration rules then
+ *          do include sect(float rule(float x), float a, float b)]
+ *       -> print roots
+ */
+
+
 float t0 = 0;
 float t1 = 2*M_PI;
-float n  = 500;
+float integ_steps  = 500;
 
 float acc = 0.00001;
+
+FILE *p = NULL;
 
 float 
 func(float x, float z)
@@ -30,17 +44,21 @@ func(float x, float z)
 float
 simpson(float z)
 {
+	float a = t0;
+	float b = t1;
+	float n = integ_steps;
+
 	float sum = 0;
-	float h   = (t1-t0)/(float)n;
+	float h   = (b-a)/(float)n;
 
 	for (int i=1; i<n; i++) {
 		if (i%2 ==0)
-			sum+=2*func(t0+i*h, z);
+			sum+=2*func(a+i*h, z);
 		else
-			sum+=4*func(t0+i*h, z);
+			sum+=4*func(a+i*h, z);
 	}
 
-	return ( h/3.0*( func(t0,z) + func(t1,z) + sum ) );
+	return ( h/3.0*( func(a,z) + func(b,z) + sum ) );
 }
 
 /*
@@ -69,12 +87,16 @@ main ( )
 	float root;
 	float bracket = 0.0001;
 
+
  	for (float z = 0.0; z<=12. ; z+=bracket) {
  		// printf("%f %f \n", z, simpson(z)); // for plotting
  		root=sect(z, z+bracket);
- 		if (root != -1) 
-			printf("%f\n", root);
+ 		if (root != -1) {
+			fprintf(p,"%f\n", root);
+			// break; // uncomment if only 1st root is needed 
+		}
  	}
 
+	fclose(p);
 	return 0;
 }

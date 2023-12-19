@@ -10,12 +10,22 @@
  * 5. write it to file 
  */
 
+/*
+ *   mathematical function (2 variables)
+ *     -> integrator
+ *      -> root_finding for the integration results
+ *         [if roots are found for different integration rules then
+ *          do include sect(float rule(float x), float a, float b)]
+ *       -> print roots
+ */
+
+
 // constants
 // ---------
 // integration limits, step_size
-float t0       = 0;
-float t1       = M_PI; 
-int integ_n    = 500;
+float t0           = 0;
+float t1           = M_PI; 
+int integ_steps    = 500;
 
 float acc = 0.00001;
 
@@ -46,23 +56,22 @@ func (float o, float z)
 float
 simpson1 (float z)
 {
-	float h = (t1-t0)/(float)(integ_n);
+	// these are fixed 
+	float a = t0;
+	float b = t1;
+	float n = integ_steps; 
+
+
+	float h = (b-a)/(float)(n);
 	float sum = 0;
 
-	for (int i = 1; i < integ_n; i++) {
+	for (int i = 1; i < n; i++) {
 		if (i%2==0)
-			sum+=2*func(t0+(i*h),z);
+			sum+=2*func(a+(i*h),z);
 		else
-			sum+=4*func(t1+(i*h),z);
+			sum+=4*func(a+(i*h),z);
 	}
-	return (h/3.0*( func(t0,z)+func(t1,z)+sum ));
-}
-
-// checking function
-float 
-simpson2 (float z)
-{
-	return (z*z - 1);
+	return (h/3.0*( func(a,z)+func(b,z)+sum ));
 }
 
 // multiplying the factor at last
@@ -71,6 +80,14 @@ simpson (float z)
 {
 	return (simpson1(z)*pow(z,N)/(pow(2,N+1)*fact(N)));
 }
+
+// checking function
+// float 
+// simpson2 (float z)
+// {
+// 	return (z*z - 1);
+// }
+
 
 float 
 sect (float a, float b)
@@ -117,4 +134,3 @@ main ()
 	fclose(p);
 	return 0;
 }
-

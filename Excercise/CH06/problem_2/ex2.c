@@ -10,7 +10,6 @@ float acc = 0.00001;
 // }
 
 
-
 float 
 trapez (float func(float x, float y), float a, float b, float n, float dummy)
 {
