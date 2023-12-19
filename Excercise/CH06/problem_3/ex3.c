@@ -124,13 +124,25 @@ quad (float a, float b, float E)
 
 	#include "GAUSS.C" // a switch case file in present working directory 
 
-	/* change of variable of integration from (a to b) --> (-1 to +1)
-	 * change integration(f(y)) limits (a  to  b)  to
-	 *        integration(f(x)) limits (-1 to +1) 
-	 *  with subsitution 
-	 *         y = (a+b)/2.0 + (b-a)/2.0*x 
-	 *        dy = (b-a)/2.0 * dx
-	 */
+        /* 
+	 * change of variable of integration from y -> x 
+	 *
+         *       b                        +1
+         *      /           (b - a)     /
+         *     |  y * dy  = ------- *  |  x * dx
+         *    /                2      /
+         *     a                       -1
+	 *
+	 * with subsitution 
+	 *
+         *           (a + b)   (b - a)
+         *       y = ------- - ------- * x
+         *              2         2
+	 *
+	 *  integration(f(y)) limits (a  to  b)  changes to
+	 *  integration(f(x)) limits (-1 to +1) 
+	 *  now GAUSS quadrature can be applied in the (-1 to 1) limit
+         */
 
 	for (int i=0; i<n/2; i++) {
 		sum+=w[i]*func( ((a+b) + (b-a)*x[i])/2.0, E );
