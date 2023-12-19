@@ -14,14 +14,14 @@ double dt    = 0.01;
 
 
 // return multiple step_size values
-struct 
-step {
+typedef struct 
+{
 	double x;
 	double y;
-};
+} step;
 
 /*
- * give 2nd order equation
+ * given 2nd order equation
  * my'' + ky = 0
  * decompose as
  *       y' = x
@@ -44,10 +44,10 @@ func2(double x, double y, double t)
 }
 
 // for returning multiple step_size values
-struct step 
+step 
 RK4_step(double x, double y, double t, double dt)
 {
-	struct step step_size;
+	step step_size;
 
 	double slope_x, m1, m2, m3, m4;
 	double slope_y, k1, k2, k3, k4;
@@ -87,7 +87,8 @@ main ()
 	double t; 
 	double y_RK4   = y_ini;
 	double x_RK4   = x_ini;
-	struct step step_size;
+
+	step step_size;
 
 	double required_interval= dt;
 	double no_of_terms = (required_interval / (float) dt);
@@ -106,7 +107,7 @@ main ()
 		y_RK4     = y_RK4   + step_size.y ;
 
 	 // print only if it's required interval length
-    //  and x greater than 1
+        //  and x greater than 1
 
 	if ( fmodf(n,no_of_terms) == 0.0 && t+dt >= 0  ) { 
 		printf ("%f \t %f \t %f \n", t+dt, actual(t+dt), y_RK4 );
@@ -116,4 +117,3 @@ main ()
 	}
 
 }
-	
