@@ -31,7 +31,7 @@ futile effort to recreate those instead try to figure with manpages
        M_SQRT2     Value of √2
        M_SQRT1_2   Value of 1/√2
 
-2. reminder function with fmodf         <math.h>
+2. reminder function with fmodf()         <math.h>
 
        If x or y is a NaN, a NaN is returned.
        If x is an infinity, a domain error occurs, and a NaN is returned.
