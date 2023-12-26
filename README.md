@@ -20,6 +20,9 @@ as of now,
 
 For curiosity - I'm following [Kernal source file style](https://man.openbsd.org/style.9)
 
+I'm satisfied with how these templates, piece of codes turned out and I was able to explain to myself+my friends, 
+but I would be very happy if someone can dumb it down even further keeping the same essence of learning. Cheers!
+
 # Computational Physics (Lab) - M.Sc. Physics University of Delhi
 
 ## Semester: III Course Code: PH-CL502
