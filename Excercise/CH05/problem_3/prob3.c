@@ -18,11 +18,11 @@ double dt    = 0.01;
 
 
 // return multiple step_size values
-struct 
-step {
+typedef struct 
+{
 	double x;
 	double y;
-};
+} step;
 
 /*
  * given the 2 1st order equation
@@ -45,10 +45,10 @@ func2(double x, double y, double t)
 }
 
 
-struct step 
+step 
 RK4_step(double x, double y, double t, double dt)
 {
-	struct step step_size;
+	step step_size;
 
 	double slope_x, m1, m2, m3, m4;
 	double slope_y, k1, k2, k3, k4;
@@ -82,7 +82,7 @@ main ()
 	double t; 
 	double x_RK4, y_RK4;   
 
-	struct step step_size;
+	step step_size;
 	int n=1;
 
         // no of terms in the required interval depending on dt
