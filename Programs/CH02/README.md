@@ -62,5 +62,5 @@ futile effort to recreate those instead try to figure with manpages
 
 
 The above 2 figures are created using these builtin functions, having
-an idea of how to find these and recreate will help you solve roblems 
+an idea of how to find these and recreate will help you solve problems 
 on test. 
