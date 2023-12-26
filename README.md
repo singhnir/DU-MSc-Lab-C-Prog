@@ -221,7 +221,7 @@ All the linux distributers have git installed in their system so they simply pas
 Normally no windows has git preinstalled so previous command doesn't work on it but again you can download a zip copy of the codes clicking [**here**](https://github.com/singhnir/DU-MSc-Lab-C-Prog/archive/master.zip).
 
 ## Requirements
-* Text Editor (Atom/Sublime...)
+* Text Editor (Atom/Sublime/emacs...) - vim.tiny is aliased as vi in lab boxes
 * GCC Compiler
 * Gnuplot
 
