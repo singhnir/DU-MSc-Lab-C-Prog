@@ -3,7 +3,8 @@ sample figures.
 
 some examples,
 
-<sample1/period.png>
+![figure1](sample1/period1.png)
+![figure1](sample2/period2.png)
 
 <sample2/period.png>
 
