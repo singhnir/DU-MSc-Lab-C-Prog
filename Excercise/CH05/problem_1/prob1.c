@@ -7,12 +7,11 @@ double y_ini = 1.0;
 double x_ini = 0.0;
 double dx    = 0.01;
 
-struct 
-step 
+typedef struct 
 {
 	double x;
 	double y;
-};
+}step;
 
 double 
 func(double y, double x) 
@@ -46,10 +45,10 @@ RK2_step(double x, double t, double dt)
 }
 
 
-struct step 
+step 
 RK4_step(double x, double t, double dt)
 {
-	struct step step_size;
+	step step_size;
 	double  slope, k1, k2, k3, k4;
 	
 	k1    = func(x,t);
