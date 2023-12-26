@@ -1,32 +1,37 @@
-// bifurcation diagram for the logistic map
-#include<stdio.h>
-#include<math.h>
-// defining the function to be solved
-double xn1(double alpha, double xn){
-    return alpha*xn*(1-xn);
+#include <math.h>
+#include <stdio.h>
+
+/*
+ *  Let me Nit Pick - The question is asking for a Orbit diagram not
+ *  a bifurcation diagram, bif'n is in context of stability analysis 
+ *  not for period doubling,  there you  go hehe non-linear dynamics
+ */ 
+
+// difference equation of naive population model  x = ax(1-x)
+
+double x_ini = 0.72; 
+
+float 
+func( double x, double alpha )
+{
+	double n = 1;
+	do {	
+		x += alpha*x* ( 1 - x );
+		n++;
+		if ( n >= 10000.0 )                        // taking care of transient behaviour
+			printf ("%f \t %f \n", alpha, x ) ;   //  either a fixed point or oscillates with period 
+	} while ( n <= 10100.0 ); 
+
+	return 0;
 }
 
-int main()
-{
-    FILE*fp=NULL;
-    fp=fopen("prob6.txt","w");
 
-    double alpha,x=0.1,x1;
-    //for(x=0.1;x<=1;x=x+0.1){
-        if(x!=0 && x!=0.5 && x!=1)
-        {
-            for(alpha=0;alpha<=4;alpha=alpha+0.05)
-            {  
-                int i=1;    
-                x1=xn1(alpha,x);        
-                do{
-                    if(i>=10000){
-                        fprintf(fp,"%lf\t%lf\n",alpha,xn1(alpha,x1));
-                    }                   
-                    x1=xn1(alpha,x1);
-                    i++;
-                }while(i<=10100);    
-            }
-        }
-    //}
+int 
+main () 
+{
+	double x = x_ini;  
+	for ( double alpha = 0.0 ; alpha <= 4.0 ; alpha+=0.005) {
+		func (x, alpha);
+	}
+	return 0;
 }

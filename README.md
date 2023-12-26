@@ -1,3 +1,32 @@
+# Intention of This fork
+
+My goal is to write  Readable, self contained solutions that let's one to learn the logic, not taylor piece of jumbling codes for getting output - that's what
+I felt when I looked into manual linked and I tried too hard to learn from it with vain. 
+
+I suggest the starting points as the directory Programs, Each chapter (atleast the One I have modified) have notes + templates that's used for solving excersise
+as of now,
+
+<ul>
+<li><a href="Programs/CH02/README.md"> Receipe for periodic plots using in-built functions</a></li>
+<li><a href="Excercise/CH04/problem_1/prob1.c"> A general template for Root finding of function without bracketing roots</a></li>
+<li><a href="Programs/CH05/problem_1/prob1.c"> Explains solving ode with numerical techniques Euler, RK2 and RK4 methods</a></li>
+<li><a href="Programs/CH05/problem_2/prob2.c"> Extending previous for higher dimensionality </a></li>
+<li><a href="Programs/CH06/notes.txt"> Receipe for solving Integration and root finding problems </a></li>
+
+</ul>
+
+
+
+
+For curiosity - I'm following [Kernal source file style](https://man.openbsd.org/style.9)
+
+I'm satisfied with how these templates, piece of codes turned out and I was able to explain to myself+my friends, 
+but I would be very happy if someone can dumb it down even further keeping the same essence of learning. Cheers!
+
+finally thanks to [musubiie](https://github.com/musubiiie) for chapter 2 periodic question and motivation to
+make templates ;)
+
+
 # Computational Physics (Lab) - M.Sc. Physics University of Delhi
 
 ## Semester: III Course Code: PH-CL502
@@ -199,7 +228,7 @@ All the linux distributers have git installed in their system so they simply pas
 Normally no windows has git preinstalled so previous command doesn't work on it but again you can download a zip copy of the codes clicking [**here**](https://github.com/singhnir/DU-MSc-Lab-C-Prog/archive/master.zip).
 
 ## Requirements
-* Text Editor (Atom/Sublime...)
+* Text Editor (Atom/Sublime/emacs...) - vim.tiny is aliased as vi in lab boxes
 * GCC Compiler
 * Gnuplot
 

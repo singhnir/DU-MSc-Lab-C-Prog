@@ -1,50 +1,119 @@
-// solving the spring-mass system
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 
-// defining the function to be solved
-double f1(double t,double y,double z){
-    return z;  
-}
-double f2(double t,double y,double z){
-    return -y;
-}
+// define parameters of system
+double A = 1.0;
+double k = 1.0;
+double m = 1.0;
 
-int main()
+// global 
+double y_ini = 1.0;
+double x_ini = 0.0;
+double t_ini = 0.0;
+double dt    = 0.01;
+
+
+// return multiple step_size values
+typedef struct 
 {
-    FILE*fp=NULL;
-    FILE*fp1=NULL;
-    fp=fopen("exact.txt","w");
-    fp1=fopen("rk4.txt","w");
+	double x;
+	double y;
+} step;
 
-    double t,y,z,h=0.05;
-    double k1,k2,k3,k4,m1,m2,m3,m4;
-    // printing the exact solution
-    for (t=0;t<=10;t=t+0.05)
-    {
-        fprintf(fp,"%.2f\t%lf\n",t,cos(t));
-    }
-    // initial conditions
-    t=0;
-    y=1;
-    z=0;
-    // Using RK4 Method
-    do{
-        k1=h*f1(t,y,z);
-        m1=h*f2(t,y,z);
+/*
+ * given 2nd order equation
+ * my'' + ky = 0
+ * decompose as
+ *       y' = x
+ * mx'+ ky  = 0 
+ *       x' = -ky/m
+ */
 
-        k2=h*f1(t+h/2,y+k1/2,z+m1/2);
-        m2=h*f2(t+h/2,y+k1/2,z+m1/2);
+// y'
+double 
+func1(double x, double y, double t) 
+{
+	return ( x ) ;
+}
 
-        k3=h*f1(t+h/2,y+k2/2,z+m2/2);
-        m3=h*f2(t+h/2,y+k2/2,z+m2/2);
+// x'
+double 
+func2(double x, double y, double t) 
+{
+	return( -k*y / (float) m );
+}
 
-        k4=h*f1(t+h,y+k3,z+m3);
-        m4=h*f2(t+h,y+k3,z+m3);
+// for returning multiple step_size values
+step 
+RK4_step(double x, double y, double t, double dt)
+{
+	step step_size;
 
-        y=y+(k1+2*k2+2*k3+k4)/6;
-        z=z+(m1+2*m2+2*m3+m4)/6;
-        t=t+h;
-        fprintf(fp1,"%.2f\t%lf\n",t,y);
-    } while(t<=10);
+	double slope_x, m1, m2, m3, m4;
+	double slope_y, k1, k2, k3, k4;
+
+	k1    = func1(x, y, t);  // y'
+	m1    = func2(x, y, t); //  x'  
+
+	k2    = func1(x + (m1*dt/2.0) , y + (k1*dt/2.0), t + dt/2.0 ); 
+	m2    = func2(x + (m1*dt/2.0) , y + (k1*dt/2.0), t + dt/2.0 ); 
+
+	k3    = func1(x + (m2*dt/2.0) , y + (k2*dt/2.0), t + dt/2.0 ); 
+	m3    = func2(x + (m2*dt/2.0) , y + (k2*dt/2.0), t + dt/2.0 ); 
+
+	k4    = func1(x + (m3*dt), y + (k3*dt) , t + dt);
+	m4    = func2(x + (m3*dt), y + (k3*dt) , t + dt); 
+
+
+        // in the form a_i * k_i  
+	slope_y = 1/(double)6.0 * ( 1*k1 + 2*k2 + 2*k3 + 1*k4 ) ;
+	slope_x = 1/(double)6.0 * ( 1*m1 + 2*m2 + 2*m3 + 1*m4 ) ;
+
+	step_size.y = slope_y * dt;	
+	step_size.x = slope_x * dt;	
+
+   	return ( step_size ); 
+}
+
+double
+actual ( double t )
+{
+return ( A * cos( sqrt(k/m)*t ) ) ;
+}
+
+int 
+main ()
+{
+	double t; 
+	double y_RK4   = y_ini;
+	double x_RK4   = x_ini;
+
+	step step_size;
+
+	double required_interval= dt;
+	double no_of_terms = (required_interval / (float) dt);
+
+        // no of terms in the required interval depending on dt
+       //  and making sure it's a integer
+
+	int n =1; // starting off with 1st term
+	printf ("no of terms %f \n", no_of_terms);
+
+	printf ("%8s \t %8s \t %8s \n","time","actual", "RK4"); 
+
+	for ( t = t_ini ; t <= 5.0; t+=dt ) {
+		step_size = RK4_step (x_RK4, y_RK4, t, dt);
+		x_RK4     = x_RK4   + step_size.x ;
+		y_RK4     = y_RK4   + step_size.y ;
+
+	 // print only if it's required interval length
+        //  and x greater than 1
+
+	if ( fmodf(n,no_of_terms) == 0.0 && t+dt >= 0  ) { 
+		printf ("%f \t %f \t %f \n", t+dt, actual(t+dt), y_RK4 );
+	}
+
+		n++;
+	}
+
 }

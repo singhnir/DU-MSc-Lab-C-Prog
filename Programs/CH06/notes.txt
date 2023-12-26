@@ -1,0 +1,47 @@
+/*
+ * Figuring all the Constants
+ * ------------------------- 
+ * 
+ * see which of the following are constants and keep function arguments compact
+ *
+ * integration limit
+ * integration step size
+ *
+ * root finding interval
+ */
+
+/*
+ * no of Variables in the questioned functions 
+ * -------------------------------------------
+ *
+ * see how many variables and constants are there
+ * define mathematical function's constants in Capital
+ */
+
+/*
+ * Writing a Mind Map 
+ * ------------------
+ *
+ * before starting off know what functions + what order to write and combine, 
+ * some of sample mind maps 
+ * based on excersise problems
+ *
+ *  1. mathematical function 
+ *      -> integrator 
+ *       -> plot for integrator  
+ *     
+ *  2. mathematical function
+ *      -> integrator (different integrators)
+ *       -> compare accuracy (no fixed integration step - n) 
+ *        -> print no of steps, result
+ *     
+ *  3. mathematical function 
+ *      -> integrator 
+ *       -> root_finding for the integration results 
+ *        -> print roots 
+ *     
+ *  4. mathematical function 
+ *      -> root_finding 
+ *       -> roots as integrator's limits 
+ *        -> plot for integrator  
+ */     

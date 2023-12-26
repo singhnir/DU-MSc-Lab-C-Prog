@@ -5,15 +5,18 @@
 FILE *p;
 char filename[50];
 
-// Global variable
-int dummy      = 1;
-float accuracy = 0.00001;
+
+// Global Variables - approx invertal be generous ;)
+float a = 1.5;
+float b = 10.0;
 
 /* 
  * define your function 
  * if implict define 2 parameters ie func(x,y) and start fixing x
  * iterate over y
- * else func(x) 
+ *
+ * else func(dummy, x)  and choose dummy = (any_number)
+ * iterate over x 
  * 
  *       ----legend for variables----
  *       a -  starting value of interval
@@ -23,35 +26,20 @@ float accuracy = 0.00001;
  *       h -  small addition parameter for newton_ralph
  */
 
+/* define function for which root is being found */
 float 
 func(float dummy, float x)
 {
-	float u0=1,u;
-	float u1=2*x;   
-	int order = 2;
-	do {
-		u = 2*x*u1 - u0; // u2, u3, u4
-		u0 = u1;
-		u1 = u;
-		order++ ; // 3,4,5
-	} while ( order <= 4 );
-	return (u);
-	
+	return (exp(a*x)-b*x*x);
 }
 
-/*
- * 1st derivate of func for newton ralph
- */
-
+/* 1st derivate of func for newton ralph */
 float 
-func_deri(float x, float y)
+func_deri(float dummy, float x)
 {
-	return (3*pow(y,2) + x);
+	return (a*exp(a*x) - 2*b*x);
 }
 
-///
-// secant method
-///
 float 
 sect(float x,float a, float b)
 {
@@ -64,16 +52,13 @@ sect(float x,float a, float b)
 		b = m;
 		n ++ ;
 	//	printf("%f \t %f\n", x,a); 
-	} while ( fabs(a-b) > accuracy );
+	} while ( fabs(a-b) > 0.00001 ); 
 
 	printf("%f \t %f", x,a); 
 	printf("\tin %f iternations\n", n);
 	return 0;
 }
 
-///
-// bisection method
-///
 float 
 bisec(float x, float a, float b)
 {
@@ -89,7 +74,7 @@ bisec(float x, float a, float b)
 			a = m;
 		n ++ ;
 //		printf("%f \t %f\n", func(x,a), func(x,b)); 
-	} while ( fabs(b-a) > accuracy );
+	} while ( fabs(b-a) > 0.00001 ); 
 
 	printf("%f \t %f", x,a); 
 	printf("\tin %f iternations\n", n);
@@ -98,9 +83,6 @@ bisec(float x, float a, float b)
 }
 
 
-///
-// newton - raplhson
-///
 float
 newt (float x, float a, float b)
 {
@@ -121,27 +103,21 @@ newt (float x, float a, float b)
 }
 
 
-/*
- * for plotting use this function and redirect using '>'
- * eg. gcc -Wall *.c -lm && ./a.out > sample.txt
- * then gnuplot,
- * > plot "sample.txt" using 1:2 with lines
- */
-void 
-func_plot() 
-{
-	for (float j = -2.0; j<=2.0; j+=0.0001)  
-            	printf("%f \t %f\n", j, func(dummy,j)); 
-}
-
-
 int 
 main()
 {
-	for (float j = -2.0; j<=2.0; j+=0.001)  {
+	int dummy=1;
+  //	for (float j = -2.0; j<=2.0; j+=0.0001)  {
+  //      	printf("%f \t %f\n", j, func(dummy,j));
+  //	}
+  ///
+
+	for (float j = -1.0; j<=1.0; j+=0.001)  {
 		bisec (dummy, j, j+0.001);
-		sect (dummy, j, j+0.001);
-		// no possiblity of newt-raplh cause of derivative function
+		sect  (dummy, j, j+0.001);
+		newt  (dummy, j, j+0.001);
+
 	}
 }
+
 

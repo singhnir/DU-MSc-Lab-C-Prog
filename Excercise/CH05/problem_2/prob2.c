@@ -2,17 +2,13 @@
 #include <math.h>
 
 // define parameters of system
-double r1 = 0.25;      
-double r2 = 0.01;
-double r3 = 1.0;
-double r4 = 0.01;
+double a = 0.1;      // alpha = 0.1, 0.5, 1.0
+double k = 1.0;
+double m = 1.0;
 
 // global 
-// it's better to define initial conditions in main
-// because usually a single plot should show multiple initial conditions  
-
 // double y_ini = a;  // global variables cannot be dynamic  
-double x_ini = 100.0;  //  y' = x
+double x_ini = 0.0;  //  y' = x
 double t_ini = 0.0;
 double dt    = 0.01;
 
@@ -25,23 +21,25 @@ typedef struct
 } step;
 
 /*
- * given the 2 1st order equation
- *         y' = r3y + r4xy 
- *         x' = r1x - r2xy
+ * given the 2nd order equation
+ *         y'' + sin(y) = 0
+ * decompose as
+ *         y' = x 
+ *         x' = -sin(y) 
  */
 
 // y'
 double 
 func1(double x, double y, double t) 
 {
-	return ( -r3*y + r4*x*y ) ;
+	return ( x ) ;
 }
 
 // x'
 double 
 func2(double x, double y, double t) 
 {
-	return( r1*x - r2*x*y );
+	return( -sin(y) );
 }
 
 
@@ -76,34 +74,45 @@ RK4_step(double x, double y, double t, double dt)
    	return ( step_size ); 
 }
 
+double
+actual ( double t )
+{
+return ( a * cos( t ) ) ;
+}
+
 int 
 main ()
 {
 	double t; 
-	double x_RK4, y_RK4;   
-
+	double y_RK4   = a;
+	double x_RK4   = x_ini;
 	step step_size;
-	int n=1;
+
+	double required_interval= dt;
+	double no_of_terms = (required_interval / (float) dt);
 
         // no of terms in the required interval depending on dt
        //  and making sure it's a integer
 
-	printf ("%8s \t %8s \t %8s \n","time","x", "y"); 
+	int n =1; // starting off with 1st term
+	printf ("no of terms %f \n", no_of_terms);
 
-	for ( double y_ini = 5.0; y_ini <=25.0; y_ini+=5.0) {
+	printf ("%8s \t %8s \t %8s \n","time","actual", "RK4"); 
 
-		y_RK4 = y_ini;
-		x_RK4 = x_ini;
-        
-		for ( t = t_ini ; t <= 20; t+=dt ) {
-
+	for ( t = t_ini ; t <= 8*M_PI; t+=dt ) {
 		step_size = RK4_step (x_RK4, y_RK4, t, dt);
 		x_RK4     = x_RK4   + step_size.x ;
 		y_RK4     = y_RK4   + step_size.y ;
 
-		printf ("%f \t %f \t %f \n", t+dt, x_RK4, y_RK4 );
+	 // print only if it's required interval length
+        //  and x greater than 1
 
-		}
-		
+	if ( fmodf(n,no_of_terms) == 0.0 && t+dt >= 0  ) { 
+		printf ("%f \t %f \t %f \n", t+dt, actual(t+dt), y_RK4 );
 	}
+
+		n++;
+	}
+
 }
+	
