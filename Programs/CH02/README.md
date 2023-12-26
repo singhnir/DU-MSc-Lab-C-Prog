@@ -1,12 +1,10 @@
-Most probable question is about plotting periodic functions, given the 
-sample figures.
+Most probable is about plotting periodic functions, given  
+sample figures as question
 
 some examples,
 
 ![figure1](sample1/period1.png)
 ![figure1](sample2/period2.png)
-
-<sample2/period.png>
 
 ------------------------------------------------------------------------
 ### tip - look up Manpages
