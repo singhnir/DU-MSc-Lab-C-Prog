@@ -22,7 +22,8 @@
  * Writing a Mind Map 
  * ------------------
  *
- * before starting off know what functions + what order to write and combine, some of sample mind maps 
+ * before starting off know what functions + what order to write and combine, 
+ * some of sample mind maps 
  * based on excersise problems
  *
  *  1. mathematical function 
