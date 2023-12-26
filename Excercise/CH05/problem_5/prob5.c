@@ -17,12 +17,12 @@ double dt    = 0.01;
 
 
 // return multiple step_size values
-struct 
-step {
+typedef struct 
+{
 	double x;
 	double y;
 	double z;
-};
+}step;
 
 /*
  * given the 2nd order equation
@@ -55,10 +55,10 @@ func3(double x, double y, double z, double t)
 
 
 
-struct step 
+step 
 RK4_step(double x, double y, double z, double t, double dt)
 {
-	struct step step_size;
+	step step_size;
 
 	double slope_y, k1, k2, k3, k4;   // func1
 	double slope_x, m1, m2, m3, m4;  //  func2
@@ -101,7 +101,7 @@ main ()
 	double y_RK4 = y_ini;   
 	double z_RK4 = z_ini;   
 
-	struct step step_size;
+	step step_size;
 
 	printf ("%8s \t %8s \t %8s \t %8s \n","time", "x", "y", "z"); 
 
