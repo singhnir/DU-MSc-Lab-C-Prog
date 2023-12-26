@@ -1,5 +1,4 @@
-Most probable is about plotting periodic functions, given  
-sample figures as question
+Most probable is about plotting periodic functions, given sample figures as question
 
 some examples,
 
