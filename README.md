@@ -7,6 +7,7 @@ I suggest the starting points as the directory Programs, Each chapter (atleast t
 as of now,
 
 <ul>
+<li><a href="Programs/CH02/README.txt"> Receipe for periodic plots using in-built functions</a></li>
 <li><a href="Excercise/CH04/problem_1/prob1.c"> A general template for Root finding of function without bracketing roots</a></li>
 <li><a href="Programs/CH05/problem_1/prob1.c"> Explains solving ode with numerical techniques Euler, RK2 and RK4 methods</a></li>
 <li><a href="Programs/CH05/problem_2/prob2.c"> Extending previous for higher dimensionality </a></li>
