@@ -9,7 +9,7 @@ some examples,
 ### tip - look up Manpages
 ------------------------------------------------------------------------
 
-eg. man 3 math.h
+    man 3 math.h
     man 3 complex.h
 
 almost all common operations will have a builtin functions, it's
