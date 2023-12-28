@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 FILE *p;
 float acc       = 0.00001;
@@ -166,7 +167,13 @@ main()
 {
 	p = fopen("ex3.txt","w");
 
-	float roots[5]; // create an array for storing multiple roots
+//	float roots[5]; // create an array for storing multiple roots
+
+/*
+ *	if array variables are not allowed
+ *	use calloc from stdlib.h to redefine the above array 
+ */
+	float *roots = calloc(5,sizeof(float));
 	int r_index=0;  // corresponding index
 
 	float bracket = 0.00001;
@@ -202,6 +209,9 @@ main()
 	}
 
 	fclose(p);
+
+	// free the allocated pointer
+	free(roots);
 
 	return 0;
 }
